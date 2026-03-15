@@ -1,6 +1,6 @@
 const NoResultDiv = () => {
   return <div className="no-results">
-    <img src="icons/no-result.svg" alt="No results found" className="icon"/>
+    <img src={`/icons/no-result.svg`} alt="No results found" className="icon"/>
     <h3 className="title">Something Went Wrong</h3>
     <p className="message">
         We&apos;re unable to retrieve the

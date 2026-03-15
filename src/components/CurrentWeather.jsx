@@ -4,7 +4,7 @@ const CurrentWeather = ({currentWeather}) => {
   return (
     <div className="current-weather">
         <img
-            src={`icons/${currentWeather.weatherIcon}.svg`}
+            src={`/icons/${currentWeather.weatherIcon}.svg`}
             alt="weather"
             className="weather-icon"
         />

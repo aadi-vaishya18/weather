@@ -8,7 +8,7 @@ const HourlyWeatherItem = ({hourlyWeather}) => {
         <li className="weather-item">
             <p className="time">{time}</p>
             <img
-              src={`icons/${weatherIcon}.svg`}
+              src={`/icons/${weatherIcon}.svg`}
               alt=""
               className="weather-icon"
             />
