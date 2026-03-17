@@ -195,23 +195,142 @@ body {
     margin: 25px 0 15px;
 }
 
-@media (max-width: 624px) {
+/* 🔹 Small Phones (<= 360px) */
+@media (max-width: 360px) {
 
-    body,
+    .container {
+        border-radius: 8px;
+    }
+
+    .temprature {
+        font-size: 36px;
+    }
+
+    .current-weather .weather-icon {
+        width: 80px;
+    }
+
+    .search-input {
+        font-size: 13px;
+    }
+}
+
+
+/* 🔹 Mobile (<= 480px) */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    /* SEARCH */
+    .search-section {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .search-form {
+        height: 48px;
+    }
+
+    .location-button {
+        width: 100%;
+        height: 45px;
+    }
+
+    /* WEATHER */
+    .weather-section {
+        padding: 10px 15px 20px;
+    }
+
+    .current-weather .weather-icon {
+        width: 100px;
+    }
+
+    .temprature {
+        font-size: 42px;
+    }
+
+    .temprature span {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /* HOURLY */
+    .hourly-forecast {
+        padding: 15px;
+    }
+
+    .weather-list {
+        gap: 18px;
+    }
+
+    .weather-item {
+        min-width: 50px;
+    }
+
+    .weather-item .weather-icon {
+        width: 28px;
+    }
+
+    .weather-item .time,
+    .weather-item .temp {
+        font-size: 12px;
+    }
+
+    /* NO RESULT */
+    .no-results {
+        padding: 20px;
+        min-height: 350px;
+    }
+
+    .no-results img {
+        width: 120px;
+    }
+}
+
+
+/* 🔹 Tablet (<= 768px) */
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 90%;
+    }
+
     .search-section {
         padding: 20px;
     }
 
+    .weather-section {
+        padding: 15px 20px;
+    }
+
     .hourly-forecast {
-        padding: 16px 20px;
+        padding: 15px 20px;
     }
 
-    .hourly-forecast .weather-list {
-        gap: 24px;
+    .weather-list {
+        gap: 22px;
     }
 
-    .no-results {
-        padding: 30px;
-        min-height: 458px;
+    .temprature {
+        font-size: 52px;
+    }
+}
+
+
+/* 🔹 Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 420px;
     }
 }
